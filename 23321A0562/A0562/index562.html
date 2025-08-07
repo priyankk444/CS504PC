@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechSpire 2025 Registration</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #007acc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+      color: #333;
+      font-size: 14px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s ease;
+    }
+
+    input[readonly] {
+      background-color: #f3f3f3;
+      color: #555;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    @media screen and (max-width: 600px) {
+      main {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TechSpire 2025</h1>
+    <p>Innovate | Code | Create</p>
+  </header>
+
+  <main>
+    <h2>Registration Form</h2>
+
+    <form onsubmit="event.preventDefault(); alert('Registration Successful!');">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select gender</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+
+      <label for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="" disabled selected>Select course</option>
+        <option>B.Tech - CSE</option>
+        <option>B.Tech - ECE</option>
+        <option>B.Tech - IT</option>
+        <option>B.Tech - EEE</option>
+        <option>BCA</option>
+        <option>MCA</option>
+      </select>
+
+      <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="" disabled selected>Select year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+
+      <label for="university">University Name</label>
+      <input type="text" id="university" name="university" required placeholder="e.g., JNTUH, OU, etc." />
+
+      <label for="events">Select Event</label>
+      <select id="events" name="events" required>
+        <option value="" disabled selected>Choose your event</option>
+        <optgroup label="CSE">
+          <option>CodeQuest</option>
+          <option>AI Hackathon</option>
+        </optgroup>
+        <optgroup label="ECE">
+          <option>Circuit Master</option>
+          <option>IoT Build-a-thon</option>
+        </optgroup>
+        <optgroup label="IT">
+          <option>UI/UX Sprint</option>
+          <option>Cloud Battle</option>
+        </optgroup>
+        <optgroup label="EEE">
+          <option>PowerBot Challenge</option>
+          <option>SmartGrid Simulation</option>
+        </optgroup>
+        <optgroup label="BCA">
+          <option>Web Dev Clash</option>
+          <option>App Sprint</option>
+        </optgroup>
+        <optgroup label="MCA">
+          <option>Data Drill</option>
+          <option>DevOps Arena</option>
+        </optgroup>
+      </select>
+
+      <label for="fee">Registration Fee (INR)</label>
+      <input type="text" id="fee" name="fee" value="₹200 (Fixed by University)" readonly />
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="" disabled selected>Select payment method</option>
+        <option>UPI</option>
+        <option>Debit/Credit Card</option>
+        <option>Net Banking</option>
+        <option>Cash at Campus</option>
+      </select>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </main>
+
+</body>
+</html>
+                                                                       
+
